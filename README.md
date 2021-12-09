@@ -1,6 +1,6 @@
 ## Evmos Simple Voting smart contract
 
-Switch to Evmos Testnet in Metamask:
+1. Switch to Evmos Testnet in Metamask:
 
 Name: Evmos Testnet
 
@@ -12,7 +12,7 @@ Currency: PHOTON
 
 Block Explorer: https://evm.evmos.org
 
-Vote for a test proposal on-chain
+2. Vote for a test proposal on-chain
 
 ## Check on Vercel
 
