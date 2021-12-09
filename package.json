@@ -2,7 +2,7 @@
   "name": "arbitrium",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://{username}.github.io/{repo-name}",
+  "homepage": "http://PlanemoMaxim.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
