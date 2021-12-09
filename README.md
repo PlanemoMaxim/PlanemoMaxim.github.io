@@ -16,4 +16,4 @@ Block Explorer: https://evm.evmos.org
 
 ## Check on Vercel
 
-Check out our [evmos-voting](https://vercel.com/planemomaxim/evmos-voting/4hD9tgkBkPCbsNc5nqssMbgkT7Mk) for more details.
+Check out our [evmos-voting](https://evmos-voting-1zi78yy5k-planemomaxim.vercel.app/) for more details.
