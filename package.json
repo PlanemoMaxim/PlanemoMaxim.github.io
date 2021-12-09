@@ -2,7 +2,7 @@
   "name": "arbitrium",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://PlanemoMaxim.github.io/",
+  "homepage": "http://PlanemoMaxim.github.io/evmos-voting",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,7 +21,7 @@
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
     "axios": "^0.21.4",
-    "next": "11.1.2",
+    "next": "^11.1.2",
     "ramda": "^0.27.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
