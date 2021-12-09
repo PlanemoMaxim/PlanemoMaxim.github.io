@@ -32,10 +32,10 @@ const ContractsProvider: React.FC<Props> = ({ children }) => {
       connector?.getProvider().then((provider: provider) => {
         const instance = new Web3(provider);
         setWeb3Instance(instance);
-        window.ethereum.on("accountsChanged", function (accounts) {
+        /*window.ethereum.on("accountsChanged", function (accounts) {
           // Time to reload your interface with accounts[0]!
           setAccount(accounts[0]);
-        });
+        });*/
       });
     };
 

@@ -16,7 +16,7 @@ function useVoter() {
   const { isMetaMaskActive, activateMetamask } = useMetamask();
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [proposals, setProposals] = useState([]);
+  const [proposals, setProposals] = useState<Array<Proposal>>([]);
   const [isLoading, setLoading] = useState(false);
   const [voted, setVoted] = useState(false);
   const [votedOption, setVotedOption] = useState(-1);
@@ -25,7 +25,7 @@ function useVoter() {
     setName(Web3.utils.hexToAscii(bytesName));
   }
 
-  function addProposal(pr) {
+  function addProposal(pr: any) {
     const newProposal = {
       name: Web3.utils.hexToAscii(pr[0]),
       votesCount: pr[1],
@@ -33,7 +33,7 @@ function useVoter() {
     setProposals((proposals) => [...proposals, newProposal]);
   }
 
-  function updateVotedState(vt) {
+  function updateVotedState(vt: any) {
     setVoted(vt[0]);
     setVotedOption(vt[1]);
   }
@@ -105,7 +105,7 @@ function useVoter() {
       });
   }*/
 
-  const makeVote = async (proposal) => {
+  const makeVote = async (proposal: number) => {
     if (!(ballotContract && accountAddress)) {
       return;
     }
@@ -119,7 +119,7 @@ function useVoter() {
     await ballotContract.methods
       .vote(proposal)
       .send({ from: accountAddress })
-      .then(function (arg) {
+      .then(function (arg: Object) {
         refresh();
         console.log(arg);
       });
